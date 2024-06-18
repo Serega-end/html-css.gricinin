@@ -1,0 +1,130 @@
+/* Как работать с CSS */
+p {
+	color: red;
+}
+
+/* Как работать с CSS h1 */
+h1 {
+    color: green;
+}
+
+/* Как работать с CSS h2 */
+h2 {
+    color: blue;
+}
+
+/* Как работать с CSS h3 */
+h3 {
+    color: orange;
+}
+
+/* Любые цвета в CSS */
+p {
+	color: rgb(255, 236, 114);
+}
+
+/* Ширина и высота элементов в CSS */
+p {
+    td {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+/* Практика на выравнивание текста в CSS */
+.class h1 {
+	text-align: right;
+}
+
+.class h2 {
+	text-align: right;
+}
+
+.class {
+    td {
+        width: 500px;
+        height: 300px;
+    }
+}
+
+.class th {
+	text-align: left;
+}
+
+.class td {
+	text-align: center;
+}
+
+/* Курсив в CSS */
+h2 {
+	font-style: italic;
+}
+
+/* Размер шрифта в CSS */
+.class {
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 30px;
+    }
+}
+
+/* Тип шрифта в CSS */
+p {
+	font-family: "Comic Sans MS";
+}
+
+/* Тип шрифта в CSS */
+p {
+	font: bold italic 13px/20px "Times New Roman";
+}
+
+p {
+    font: bold 300px/40px Arial red;
+}
+
+p {
+    font: bold italic 60px/50px/40px Arial
+}
+
+/* Красная строка текста в CSS */
+p {
+    text-indent: 50px;
+    text-align: justify;
+    width: 400px;
+}
+
+/* Нижнее подчеркивание текста в CSS */
+p {
+    text-decoration: underline;
+}
+
+/* Верхнее подчеркивание текста в CSS */
+p {
+	text-decoration: overline;
+}
+
+/* Перечеркивание текста в CSS */
+p {
+	text-decoration: line-through;
+}
+
+/* Отмена эффектов для текста в CSS */
+a {
+	text-decoration: none;
+}
+
+/* Практика на основные CSS свойства */
+.top {
+    text-align: center;
+    color: blue;
+}
+
+.top2 {
+    text-align: center;
+    color: green;
+}
