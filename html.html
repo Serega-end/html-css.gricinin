@@ -1571,5 +1571,1002 @@
             </section>
         </main>
     </div>
+
+    <!-- Селекторы атрибутов в CSS -->
+    <div>
+        title {
+            color:chartreuse;
+          }
+        
+        p, title {
+            color:cyanp;
+        }
+        
+        p, title="hello" {
+            color:red;
+          }
+        
+          a, href="http://" {
+            color:blue;
+          }
+        
+          ahref=".html" {
+            color:yellow;
+          }
+        
+          p, title="hello" {
+            color:violet;
+          }
+        
+          p, class="top-" {
+            color:darkgoldenrod
+          }
+        
+          */
+    </div>
+
+    <!-- Состояния ссылок в CSS -->
+    <div>
+        a:link {
+            color: red;
+        }
+        a:visited {
+            color: green;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        a:active {
+            color: blue;
+        }
+        <a href="#">link</a>
+    </div>
+
+    <!-- Нюансы последовательности состояния ссылок в CSS -->
+    <div>
+        a:link {
+            color:blue;
+        }
+        a:hover.link {
+            color:red;
+            text-decoration: none;
+        }
+        a:active {
+            color:black;
+        }
+        a:visited {
+            color:green;
+            }
+            
+        84
+        
+        a:link, a:active, a:visited{
+            color:blue;
+            text-decoration: none;
+        }
+        a:hover.link {
+            color:red;
+        }
+    </div>
+
+    <!-- Состояния ссылок link и visited в CSS 1 -->
+    <div>
+        a:link, a:visited {
+            color: red;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        a:active {
+            color: blue;
+        }
+        <a href="#">link</a>
+    </div>
+
+    <!-- Состояния ссылок link и visited в CSS 2 -->
+    <div>
+        a {
+            color: red;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        a:active {
+            color: blue;
+        }
+        <a href="#">link</a>
+    </div>
+
+    <!-- Обычное использование состояния ссылок в CSS 1 -->
+    <div>
+        a {
+            color: red;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        <a href="#">link</a>
+    </div>
+
+    <!-- Обычное использование состояния ссылок в CSS 1.1 -->
+    <div>
+        a:link, a:active, a:visited{
+            color:blue;
+            text-decoration: none;
+        }
+        a:hover.link {
+            color:red;
+        }
+    </div>
+
+    <!-- Сложные селекторы с состояниями ссылок в CSS -->
+    <div>
+        a {
+            color: red;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+    </div>
+
+    <!-- Ссылка с классом в CSS -->
+    <div>
+        a.zzz {
+            color: red;
+        }
+        a.zzz:hover {
+            text-decoration: none;
+        }
+        
+        #block a.zzz {
+            color: red;
+        }
+        #block a.zzz:hover {
+            text-decoration: none;
+        }
+        
+        .ammeac a.zzz {
+            color: red;
+        }
+        .ammeac a.zzz:hover {
+            text-decoration: none;
+        }
+    </div>
+
+    <!-- Псевдокласс last-child 1 -->
+    <div>
+        <ul>
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
+        </ul>
+        li:last-child {
+            color: red;
+        }
+    </div>
+
+    <!-- Псевдокласс last-child 2 -->
+    <div>
+        <ul>
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
+        </ul>
+        li:last-child {
+            color: green;
+        }
+    </div>
+
+    <!-- Псевдокласс last-child 2 -->
+    <div>
+        <ul>
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
+        </ul>
+        li:last-child {
+            color: green;
+        }
+    </div>
+
+    <!-- Псевдокласс last-child 3 -->
+    <div>
+        <ul>
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
+        </ul>
+        li: {
+            color: red;
+        }
+        li:last-child {
+            color: green;
+        }
+    </div>
+
+    <!-- Выборка по позиции и типу элементов в CSS -->
+    <div>
+        <div>
+            <h2>заголовок</h2>
+            <p>абзац</p>
+            
+            <h2>заголовок</h2>
+            <p>абзац</p>
+            
+            <h2>заголовок</h2>
+            <p>абзац</p>
+        </div>
+        
+        <div>
+            <h2>заголовок</h2>
+            <p>абзац</p>
+            
+            <h2>заголовок</h2>
+            <p>абзац</p>
+            
+            <h2>заголовок</h2>
+            <p>абзац</p>
+            
+            <h2>заголовок</h2>
+            <p>абзац</p>
+            
+            <h2>заголовок</h2>
+            <p>абзац</p>
+        </div>
+        
+        <div>
+            <h2>заголовок</h2>
+            <p>абзац</p>
+            <p>абзац</p>
+            <p>абзац</p>
+        </div>
+        <div>
+            <h2>заголовок</h2>
+            <p>абзац</p>
+            
+            <h2>заголовок</h2>
+            <p>абзац</p>
+            <p>абзац</p>
+        </div>
+    </div>
+
+    <!-- Селектор отрицания в CSS -->
+    <div>
+        <ul>
+            <li>1</li>
+            <li class="elem">2</li>
+            <li>3</li>
+            <li>4</li>
+            <li class="elem">5</li>
+            <li>6</li>
+            <li>7</li>
+            <li class="elem">8</li>
+            <li>9</li>
+        </ul>
+        
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+        </ul>
+        
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+        </ul>
+        
+        <div id="elem"></div>
+        
+        <ul>
+            <li>watermelon</li>
+            <li>apple</li>
+            <li>orange</li>
+            <li>pear</li>
+            <li>tangerine</li>
+            <li>peach</li>
+        </ul>
+    </div>
+
+    <!-- Селектор отрицания в CSS -->
+    <div>
+        #elem {
+            width: 300px;
+            height: 100px;
+            color: white;
+            background-color: orange;*
+        }
+    </div>
+
+    <!-- Основы работы с границами в CSS -->
+    <div>
+        #elem {
+            border-width: 3px;   
+            border-style: solid;  
+            border-color: red;   
+            width: 300px;
+            height: 100px;
+        }
+    </div>
+
+    <!-- Сплошная граница в CSS -->
+    <div>
+        #elem {
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+            width: 300px;
+            height: 100px;
+        }
+    </div>
+
+    <!-- Точечная граница в CSS -->
+    <div>
+        #elem {
+            border-width: 1px;
+            border-style: dotted;
+            border-color: black;
+            width: 300px;
+            height: 100px;
+        }
+    </div>
+
+    <!-- Граница в виде тире в CSS -->
+    <div>
+        #elem {
+            border-width: 1px;
+            border-style: dashed;
+            border-color: black;
+            width: 300px;
+            height: 100px;
+        }
+    </div>
+
+    <!-- Выпуклая граница в CSS -->
+    <div>
+        #elem {
+            border-width: 3px;
+            border-style: ridge;
+            border-color: black;
+            width: 300px;
+            height: 100px;
+        }
+    </div>
+
+    <!-- Двойная граница в CSS -->
+    <div>
+        #elem {
+            border-width: 5px;
+            border-style: double;
+            border-color: black;
+            width: 300px;
+            height: 100px;
+        }
+    </div>
+
+    <!-- Свойство-сокращение для границы в CSS -->
+    <div>
+        #elem {
+            border: 1px solid red;
+            width: 300px;
+            height: 100px;
+        }
+    </div>
+
+    <!-- Граница для отдельных сторон в CSS -->
+    <div>
+        #elem {
+            width: 300px;
+            height: 100px;
+            border-left: 1px solid red;
+        }
+        право и лево
+        #elem {
+            width: 300px;
+            height: 100px;
+            border-left: 1px solid red;
+            border-right: 1px solid red;
+        }
+            задание
+        #elem {
+            width: 300px;
+            height: 100px;
+            border-left: 1px solid yellow;
+            border-right: 1px solid green;
+            border-bottom: 1px solid red;
+            border-top: 1px solid blue;
+        }
+        
+    </div>
+
+    <!-- Скругление границ блока в CSS -->
+    <div>
+        #elem {
+            width: 300px;
+            height: 100px;
+            border: 1px solid red;
+            border-radius: 10px;
+        }
+        
+    </div>
+
+    <!-- Скругление границ фона в CSS №100 -->
+    <div>
+        #elem {
+            border-radius: 20px;
+            width: 300px;
+            height: 100px;
+            background-color: #e4f1ed;
+        }
+        
+    </div>
+
+    <!-- Создание круга в CSS №101 -->
+    <div>
+        #elem {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            border: 1px solid green;
+        }
+        
+    </div>
+
+    <!-- Четыре значения скругления для разных углов CSS №103 -->
+    <div>
+        #elem {
+            width: 300px;
+            height: 100px;
+            border: 1px solid red;
+            border-radius: 10px 20px 30px 40px;
+        }
+    </div>
+
+    <!-- Два значения скругления для разных углов CSS №104 -->
+    <div>
+        104 два значения скругления для разнфх углов
+        Если задано два значения, 
+        то первое значение задает скругление для для верхнего
+        левого и нижнего правого, второе - верхнего правого
+        и нижнего левого углов:
+        #elem {
+            width: 300px;
+            height: 100px;
+            border: 1px solid red;
+            border-radius: 10px 40px;
+    </div>
+
+    <!-- Три значения скругления для разных углов в CSS №105 -->
+    <div>
+        #elem {
+            width: 300px;
+            height: 100px;
+            border: 1px solid red;
+            border-radius: 10px 20px 30px;
+        }
+    </div>
+
+    <!-- Скругленные уголки в процентах в CSS №106 -->
+    <div>
+        #elem {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            border-radius: 10%;
+        }
+    </div>
+
+    <!-- Создание круга при скруглении в процентах в CSS №107 -->
+    <div>
+        #elem {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            border-radius: 50%;
+        }
+    </div>
+
+    <!-- Картинка для фона в CSS №108 -->
+    <div>
+        #elem {
+            background-image: url("bg.png");
+            width: 400px;
+            height: 300px;
+            border: 3px solid black;
+        }
+        
+    </div>
+
+    <!-- Повторение картинки фона в CSS №109 -->
+    <div>
+        #elem {
+            background-repeat: no-repeat;
+            background-image: url("bg.png");
+            width: 400px;
+            height: 300px;
+            border: 1px solid black;
+        }
+        #elem {
+            background-repeat: no-repeat;
+            background-image: url("bg.png");
+            width: 300px;
+            height: 500px;
+            border: 1px solid black;
+        }
+    </div>
+
+    <!-- Квадратные маркеры списков ul в CSS №112 -->
+    <div>
+        ul {
+            list-style-type: square;
+        }
+        
+        
+        
+        ul {
+            list-style-type: circle;
+        }
+    </div>
+
+    <!-- Работа с маркерами списков ul в CSS №114 -->
+    <div>
+        ul {
+            list-style-type: disc;
+        }
+        
+    </div>
+
+    <!-- Отсутствие маркеров списков ul в CSS №115 -->
+    <div>
+        ul {
+            list-style-type: none;
+        }
+        */
+    </div>
+
+    <!-- Строчные римские цифры для списков ol в CSS №117 -->
+    <div>
+        ol {
+            list-style-type: lower-roman;
+        }
+    </div>
+
+    <!-- Заглавные римские цифры для списков ol в CSS №118 -->
+    <div>
+        ol {
+            list-style-type: upper-roman;
+        }
+        лат буквы
+        ol {
+            list-style-type: lower-alpha;
+        }
+        заглавные лат буквы
+        ol {
+            list-style-type: upper-alpha;
+        }
+        строч греческие буквы
+        ol {
+            list-style-type: lower-greek;
+        }
+        числа с нулем впереди для списков
+        ol {
+            list-style-type: decimal-leading-zero;
+        }
+    </div>
+
+    <!-- Работа с отступами margin в CSS №123 -->
+    <div>
+        #parent {
+            width: 300px;
+            border: 1px solid red;
+        }
+        #child {
+            height: 100px;
+            border: 1px solid green;
+        }
+    </div>
+
+    <!-- Отступы margin для разных сторон в CSS №124 -->
+    <div>
+        #parent {
+            width: 300px;
+            border: 1px solid red;
+        }
+        #child {
+            margin-top:    10px; /* сверху 
+            margin-right:  20px; /* справа 
+            margin-bottom: 30px; /* снизу 
+            margin-left:   40px; /* слева 
+            
+            height: 100px;
+            border: 1px solid green;
+        }
+    </div>
+
+    <!-- Четыре значения в свойстве margin в CSS №126 -->
+    <div>
+        #parent {
+            width: 300px;
+            border: 1px solid red;
+        }
+        #child {
+            height: 100px;
+            border: 1px solid green;
+            margin: 10px 20px 30px 40px;
+        }
+    </div>
+
+    <!-- Два значения в свойстве margin в CSS №127 -->
+    <div>
+        #parent {
+            width: 300px;
+            border: 1px solid red;
+        }
+        
+        #child {
+            height: 100px;
+            border: 1px solid green;
+            margin: 40px 20px;
+        }
+    </div>
+
+    <!-- Три значения в свойстве margin в CSS №128 -->
+    <div>
+        #parent {
+            width: 300px;
+            border: 1px solid red;
+        }
+        
+        #child {
+            height: 100px;
+            border: 1px solid green;
+            margin: 10px 20px 30px;
+        }
+    </div>
+
+    <!-- Работа с отступами padding в CSS №129 -->
+    <div>
+        #elem {
+            width: 300px;
+            border: 1px solid red;
+            text-align: justify;
+        }
+        
+        /* теперь заданим 30 пикселей для всех стрн
+         #elem {
+            padding: 30px;
+            width: 300px;
+            border: 1px solid red;
+            text-align: justify;
+        } */
+    </div>
+
+    <!-- Отступы padding для разных сторон в CSS №130 -->
+    <div>
+        #elem {
+            padding-top:    10px; /* сверху 
+            padding-right:  20px; /* справа 
+            padding-bottom: 30px; /* снизу 
+            padding-left:   40px; /* слева 
+            
+            width: 300px;
+            border: 1px solid red;
+            text-align: justify;
+        }
+    </div>
+
+    <!-- Работа с отступами padding в CSS №132 -->
+    <div>
+        #elem1 {
+            width: 100px;
+            height: 100px;
+            background: #f1f1f1;
+            margin-bottom: 20px;
+        }
+        
+        #elem2 {
+            padding: 25px;  задаем отступы 
+            width: 100px;
+            height: 100px;
+            background: #f1f1f1;
+        }
+    </div>
+
+    <!-- Влияние границы на расширение элементов в CSS №133 -->
+    <div>
+        #elem1 {
+            width: 100px;
+            height: 100px;
+            background: #f1f1f1;
+            margin-bottom: 20px;
+        }
+        
+        #elem2 {
+            width: 100px;
+            height: 100px;
+            background: #f1f1f1;
+            border: 10px solid green;  /* задаем границу */
+        }
+    </div>
+
+    <!-- Влияние padding и границы на расширение элементов в CSS №134 -->
+    <div>
+        #elem1 {
+            width: 100px;
+            height: 100px;
+            background: #f1f1f1;
+            margin-bottom: 20px;
+        }
+        
+        #elem2 {
+            width: 100px;
+            height: 100px;
+            background: #f1f1f1;
+            padding: 25px; /* задаем отступы */
+            border: 10px solid green;  /* задаем границу */
+        }
+    </div>
+
+    <!-- Отмена расширения элементов в CSS №135 -->
+    <div>
+        #elem1 {
+            width: 100px;
+            height: 100px;
+            background: #f1f1f1;
+            margin-bottom: 20px;
+        }
+        
+        #elem2 {
+            width: 100px;
+            height: 100px;
+            background: #f1f1f1;
+            padding: 25px; /* задаем отступы 
+            border: 10px solid green;  /* задаем границу 
+            box-sizing: border-box;  /* убираем расширение 
+        }
+    </div>
+
+    <!-- Ширина и высота блочного элемента в CSS №137 -->
+    <div>
+        div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+        }
+    </div>
+
+    <!-- Ширина блочного элемента в CSS №138 -->
+    <div>
+        div {
+            height: 100px;
+            border: 1px solid red;
+        }
+        
+    </div>
+
+    <!-- Высота блочного элемента в CSS №139 -->
+    <div>
+        div {
+            width: 100px;
+            border: 1px solid red;
+        }
+        
+    </div>
+
+    <!-- Высота блочного элемента без содержимого в CSS №140 -->
+    <div>
+        div {
+            width: 100px;
+            border: 1px solid red;
+        }
+    </div>
+
+    <!-- Ширина и высота строчного элемента в CSS №143 -->
+    <div>
+        span {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+        }
+    </div>
+
+    <!-- Несколько строчных элементов рядом в CSS №144 -->
+    <div>
+        span {
+            border: 1px solid red;
+        }
+    </div>
+
+    <!-- Отступы между строчными элементами в CSS №145 -->
+    <div>
+        span {
+            border: 1px solid red;
+        }
+    </div>
+
+    <!-- Работа со свойством display в CSS №147 -->
+    <div>
+        span {
+            display: block;
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            margin-bottom: 20px;
+        }
+        
+         а теперь div как строчные:
+        
+         div {
+            display: inline;
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+        }
+    </div>
+
+    <!-- Ширина и высота строчно-блочного элемента в CSS №149 -->
+    <div>
+        span {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            display: inline-block;
+        }
+    </div>
+
+    <!-- Ширина строчно-блочного элемента в CSS №150 -->
+    <div>
+        span {
+            height: 100px;
+            border: 1px solid red;
+            display: inline-block;
+        }
+    </div>
+
+    <!-- Высота строчно-блочного элемента в CSS №152 -->
+    <div>
+        span {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+            border: 1px solid red;
+            display: inline-block;
+        }
+            задание
+        div {
+        
+            margin-bottom: 20px;
+            border: 1px solid red;
+            display: inline;
+            width: 100px;
+            height: 100px;
+        }
+        
+    </div>
+
+    <!-- Выравнивание блочных элементов в CSS №153 -->
+    <div>
+        .parent {
+            border: 1px solid red;
+        }
+        
+        .child {
+            height: 100px;
+            width: 200px;
+            border: 1px solid green;
+            margin: 10px auto;
+        }
+    </div>
+
+    <!-- равнивание блочного элемента с отступом слева в CSS №154 -->
+    <div>
+        .parent {
+            padding: 10px 0;
+            border: 1px solid red;
+        }
+        .child {
+            margin-left: auto; задаем автоматический левый отступ
+                height: 100px;
+                width: 200px;
+                border: 1px solid green;
+            }
+    </div>
+
+    <!-- Выравнивание блочного элемента с отступом справа в CSS №155 -->
+    <div>
+        .parent {
+            padding: 10px 0;
+            border: 1px solid red;
+        }
+        .child {
+            margin-left: auto;
+            margin-right: 20px; задаем правый отступ 
+                height: 100px;
+                width: 200px;
+                border: 1px solid green;
+            }
+    </div>
+
+    <!-- Выравнивание блочного элемента с отступом справа в CSS №157 -->
+    <div>
+        .parent {
+            text-align: center;
+            padding: 10px 0;
+            border: 1px solid red;
+        }
+        .child {
+            border: 1px solid green;
+        }
+    </div>
+
+    <!-- Центрирование нескольких строчных элементов №158 -->
+    <div>
+        .parent {
+            text-align: center;
+            padding: 10px 0;
+            border: 1px solid red;
+        }
+        .child {
+            border: 1px solid green;
+        }
+    </div>
+
+    <!-- Центрирование нескольких строчных элементов №159 -->
+    <div>
+
+    </div>
+
+    <!-- 161 -->
+    <div>
+        <div class="parent">
+            <div class="child">text 1</div>
+            <div class="child">text 2</div>
+            <div class="child">text 3</div>
+        </div>
+        .parent {
+            padding: 10px 0;
+            border: 1px solid red;
+            margin: 5px;
+        }
+        .child {
+            padding: 10px;
+            border: 1px solid green;
+        }
+    </div>
+
+    <!-- 162 -->
+    <div>
+        <div class="parent">
+            <div class="child">text</div>
+        </div>
+        .parent {
+            padding: 10px 0;
+            border: 1px solid red;
+        }
+        .child {
+            padding: 10px;
+            border: 1px solid green;
+        }
+    </div>
 </body>
 </html>
